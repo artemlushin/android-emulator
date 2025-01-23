@@ -17,7 +17,7 @@ RUN apt-get update && \
     libc6 \
     libstdc++6 \
     socat \
-	dos2unix \
+    dos2unix \
     && rm -rf /var/lib/apt/lists/*
 
 # Download and install Android SDK command-line tools
