@@ -33,6 +33,14 @@ else
     echo "Image downloaded successfully."
 fi
 
+# Wait for the /sdcard to initialize
+echo "Waiting for /sdcard/Pictures/ to become writable..."
+while ! adb shell ls /sdcard/Pictures/ > /dev/null 2>&1; do
+    echo "Storage not ready. Retrying..."
+    sleep 2
+done
+echo "/sdcard/Pictures/ is ready!"
+
 # Push the image to the emulator
 for i in {1..5}; do
   adb push cat.jpg /sdcard/Pictures/ && break || echo "Retrying push..."
