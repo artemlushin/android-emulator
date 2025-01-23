@@ -1,6 +1,6 @@
 Android emulator Docker image with predownloaded jpeg file to test app interaction with photos.
 
-You can change link to desired jpeg file [here](https://github.com/artemlushin/android-emulator/blob/5f367f9bb9f986d5427a0150b8f9f29eefbca355/entrypoint.sh#L29) or just remove lines 17-43 if you don't need jpeg file inside emulator.
+You can change link to desired jpeg file [here](https://github.com/artemlushin/android-emulator/blob/5f367f9bb9f986d5427a0150b8f9f29eefbca355/entrypoint.sh#L29) or just remove lines 17-51 if you don't need jpeg file inside emulator.
 
 [Here](https://github.com/artemlushin/android-emulator/blob/5f367f9bb9f986d5427a0150b8f9f29eefbca355/Dockerfile#L38) you can change desired platform and android image.
 
